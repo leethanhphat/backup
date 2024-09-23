@@ -1,0 +1,65 @@
+.container{
+    width: 100%;
+    height:  1000px;
+}
+.top{
+    height: 15%;
+    width: 100%;
+    background-color: red;
+}
+.home{
+    height: 5%;
+    background-color: gray;
+}
+.mid{
+    height: 65%;
+    width: 100%;
+    background-color:white;
+}
+
+.mid .left,
+.mid .right,
+.mid .center{
+    float: left;
+}
+
+.mid .left{
+    width: 15%;
+    height: 100%;
+    background-color: green;
+}
+
+.mid .center{
+    width: 70%;
+    height: 100%;
+    background-color: #00CAFD;
+    overflow: auto; 
+    /* Sử dụng overflow để quản lý nội dung vượt ra ngoài */
+
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột trong grid */
+    gap: 20px; /* Khoảng cách giữa các ô */
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: purple;
+}
+
+
+
+.mid .right{
+    width: 15%;
+    height: 100%;
+    background-color: yellow;
+}
+.bot{
+
+    height: 15% ;
+    width: 100%;
+    background-color: #003333;
+}
